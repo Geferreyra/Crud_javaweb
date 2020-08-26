@@ -49,6 +49,7 @@ public class SaveServlet extends HttpServlet {
 		String lastName= request.getParameter("LastName");
 		String pass=request.getParameter("pass");
 		String username= request.getParameter("email");
+		//Modificar metodo variables y parametros del metodo confirm
 		
 		UsuarioVO u =new UsuarioVO();
 		

@@ -31,7 +31,7 @@ Frist name:
 
 <tr>
 <td>
-Last name
+Last name:
 </td>
 <td>
 <input type="text" name="LastName" placeholder="Insert last name">
@@ -47,6 +47,18 @@ Email:
 <input type="text" name="email" placeholder="Example@dxc.com">
 </td>
 </tr>
+
+
+<tr> 
+<td>
+User Name:
+</td>
+
+<td>
+<input type="text" name="userName" placeholder="Example@dxc.com">
+</td>
+</tr>
+
 
 
 <tr>

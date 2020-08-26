@@ -9,8 +9,9 @@ public class UsuarioDao{
 	static Connection currentCon= null;
 	static ResultSet rs= null;
 
+	//Cambiar nombres de la tabla y de los campos
 	
-	
+	 //AGREGAR METODOS DAO
 	public static UsuarioVO login(UsuarioVO user) {
 		
 		Statement stmt = null;
@@ -19,7 +20,7 @@ public class UsuarioDao{
 		String password = user.getPassword();
 		
 		String searchQuery=
-				"select * from employees where username='"
+				"select * from usuarios where username='"
 		           
 						+username
 						+"' AND password ='"
@@ -51,8 +52,8 @@ public class UsuarioDao{
     	
     	else if(more) {
     		
-    		String firstName = rs.getString("FirstName");
-    		String lastName= rs.getString("LastName");
+    		String firstName = rs.getString("firstname");
+    		String lastName= rs.getString("lastname");
     		
     		System.out.println("Welcome " + firstName);
     		user.setFirstName(firstName);
@@ -120,7 +121,8 @@ public class UsuarioDao{
 		
 		try {
 		   currentCon= Conexion.getConexion();
-		   PreparedStatement ps= currentCon.prepareStatement("insert into employees (FirstName,LastName,username,password)values(?,?,?,?)");
+		   PreparedStatement ps= currentCon.prepareStatement("insert into usuarios "
+		   		+ "(firstname,lastname,username,email,password)values(?,?,?,?,?)");
 			ps.setString(1, user.getFirstName());
 			ps.setString(2, user.getLastName());
 			ps.setString(3, user.getUsername());

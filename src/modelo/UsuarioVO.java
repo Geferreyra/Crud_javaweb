@@ -4,11 +4,26 @@ public class UsuarioVO {
 	
 	private int id;
 	private String username;
+	private String email;
 	private String password;
 	private String firstName;
 	private String lastName;
+
 	public boolean valid;
 	
+	public UsuarioVO() {
+		
+		
+	}
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getUsername() {
 		return username;
@@ -16,6 +31,14 @@ public class UsuarioVO {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
@@ -50,10 +73,14 @@ public class UsuarioVO {
 		this.valid = valid;
 	}
 
-	public int getId() {
-		// TODO Auto-generated method stub
-		return id;
+	@Override
+	public String toString() {
+		return "UsuarioVO [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password
+				+ ", firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
-		
+	
+
+   
+	
 
 }

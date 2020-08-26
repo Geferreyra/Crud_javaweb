@@ -4,10 +4,9 @@ import java.sql.*;
 
 public class Conexion {
 
-	private final  String usr="root";
-	private final  String pass="root";
-	private final  String db="bd_users";
-	private final  String url="jdbc:mysql://localhost/" + db;
+	private final  String usr="root122";
+	private final  String pass="usuarioroot";
+	private final  String url="jdbc:mysql://db4free.net:3306/dbusuarios";
 	private static Connection conn= null;
 	
 public  Conexion()
