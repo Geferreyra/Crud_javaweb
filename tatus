@@ -1,0 +1,23 @@
+[33mcommit 961b5fbc6ccec0857a256069eb0a3f5c119a432f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: gferreyra <ge.ferreyra@outlook.com>
+Date:   Wed Aug 26 17:39:44 2020 -0300
+
+    Modificacion: *URL de la clase Conexion para conectar la bd remota *UsuarioVO agregamos campo email y to string *InvalidLogin.jsp campo email
+
+[33mcommit 33ce9cd3493e1f31f59d2782f01ec88b878bb0ad[m
+Author: Sergio Ramos <sergioramos_92@hotmail.com>
+Date:   Wed Aug 26 11:43:10 2020 -0300
+
+    Añadiendo scripts de creación de base de datos y tabla
+
+[33mcommit 40dcf3fada4a837fbcb3962bce6afb24ca543cfd[m
+Author: Sergio <38234991+sergio2213@users.noreply.github.com>
+Date:   Tue Aug 25 17:44:39 2020 -0300
+
+    Adding readme
+
+[33mcommit 9bb5b80e720309a5965aa897c57bfe28aed5e2fd[m
+Author: gferreyra <ge.ferreyra@outlook.com>
+Date:   Tue Aug 25 12:13:44 2020 -0300
+
+    Commit crud
