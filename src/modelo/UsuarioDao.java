@@ -76,6 +76,8 @@ public class UsuarioDao{
      
      finally {
     	 
+    	 Conexion.Disconnect();
+    	 
     	 
 //    	 if(rs!=null) {
 //     
