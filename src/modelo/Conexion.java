@@ -6,6 +6,7 @@ public class Conexion {
 
 	private final  String usr="root122";
 	private final  String pass="usuarioroot";
+	private final  String jdbcDriver = "com.mysql.jdbc.Driver";
 	private final  String url="jdbc:mysql://db4free.net:3306/dbusuarios";
 	private static Connection conn= null;
 	
@@ -13,7 +14,7 @@ public  Conexion()
 {
 	
   try{
-	Class.forName("com.mysql.jdbc.Driver");
+	Class.forName(jdbcDriver);
 	
 	conn= DriverManager.getConnection(url,usr,pass);
 	System.out.println("Conexion a base de datos");
